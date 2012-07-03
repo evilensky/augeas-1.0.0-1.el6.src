@@ -89,6 +89,9 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/augeas.pc
 
 %changelog
+* Tue Jul  3 2012 Eugene Vilensky <evilensky@gmail.com> - 0.10.0-1
+- Updated to 0.10.0 source
+
 * Mon Jul 25 2011 David Lutterkort <lutter@redhat.com> - 0.9.0-1
 - Rebased to new version; removed all patches
 
