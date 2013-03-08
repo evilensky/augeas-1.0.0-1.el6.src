@@ -1,5 +1,5 @@
 Name:           augeas
-Version:        0.10.0
+Version:        1.0.0
 Release:        1%{?dist}
 Summary:        A library for changing configuration files
 
@@ -13,7 +13,7 @@ Source0:        http://augeas.net/download/%{name}-%{version}.tar.gz
 
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
-BuildRequires:  readline-devel libselinux-devel libxml2-devel
+BuildRequires:  readline-devel libselinux-devel
 Requires:       %{name}-libs = %{version}-%{release}
 
 %description
@@ -89,9 +89,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/pkgconfig/augeas.pc
 
 %changelog
-* Tue Jul  3 2012 Eugene Vilensky <evilensky@gmail.com> - 0.10.0-1
-- Updated to 0.10.0 source
-
 * Mon Jul 25 2011 David Lutterkort <lutter@redhat.com> - 0.9.0-1
 - Rebased to new version; removed all patches
 
